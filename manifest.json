@@ -1,0 +1,14 @@
+{
+    "name": "Wordle with Friends",
+    "version": "1.0.0",
+    "description": "Never play wordle alone again",
+    "manifest_version": 3,
+    "author": "Speniel",
+    "action":{
+        "default_popup": "popup.html",
+        "default_title": "Wordle with Friends"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
