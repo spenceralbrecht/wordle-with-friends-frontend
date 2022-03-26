@@ -9,6 +9,18 @@
         "default_title": "Wordle with Friends"
     },
     "permissions": [
-        "activeTab"
+        "storage",
+        "activeTab", 
+        "declarativeContent"
+    ],
+    "background":
+    {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://*.nytimes.com/games/wordle/*"],
+          "js": ["jquery-3.6.0.js", "app.js"]
+        }
     ]
 }
